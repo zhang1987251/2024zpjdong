@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯图片网页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            /* 网页背景色为纯白色 */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF;
+            /* 容器背景色为纯白色 */
+            padding: 0;
+            margin: 0 auto;
+            width: 85%;
+            /* 默认宽度为 */
+        }
+
+        .dongtu {
+            background-color: #FFFFFF;
+            height: auto; /* 自适应高度 */
+            width: 100%; /* 自适应宽度 */
+            display: flex;
+            flex-direction: column; /* 添加 flex-direction: column */
+            position: relative; /* 添加相对定位 */
+            padding: 0px 0px 8px 0px;
+        }
+
+        .image_0 {
+            margin: 0;
+            padding: 0px 0px 8px 0px;
+            width: 100%;
+        }
+        
+        .dongtu img {
+            margin: 0;
+            width: 100%;
+        }
+        .image_1 {
+            max-width: 72%; /* 设置最大宽度为100% */
+            width: 100%; /* 相对于父元素宽度自适应 */
+            height: auto; /* 自适应高度 */
+            position: absolute; /* 相对于父元素定位 */
+            top: 18%;
+            left: 26%;
+            border-radius: 12px ; /* 圆角半径为10px */
+            border: 6px solid black; /* 描边为2px黑色实线 */
+            filter: drop-shadow(0px 174px 49px rgba(119, 155, 238, 0.01)) drop-shadow(0px 111px 45px rgba(119, 155, 238, 0.06)) drop-shadow(0px 63px 38px rgba(119, 155, 238, 0.1)) drop-shadow(0px 28px 28px rgba(119, 155, 238, 0.2)) drop-shadow(0px 7px 15px rgba(119, 155, 238, 0.25));
+        }  
+
+        .image_2 {
+            max-width: 46%; /* 设置最大宽度为100% */
+            width: 100%; /* 相对于父元素宽度自适应 */
+            height: auto; /* 自适应高度 */
+            position: absolute; /* 相对于父元素定位 */
+            top: 2%;
+            left: 51%;
+            border-radius: 12px ; /* 圆角半径为10px */
+            border: 4px solid black; /* 描边为2px黑色实线 */
+            filter: drop-shadow(0px 57px 23px rgba(119, 238, 236, 0.03)) drop-shadow(0px 32px 19px rgba(119, 238, 236, 0.1)) drop-shadow(0px 14px 14px rgba(119, 238, 236, 0.17)) drop-shadow(0px 4px 8px rgba(119, 238, 236, 0.2));
+        }  
+        .image_3 {
+            max-width: 46%; /* 设置最大宽度为100% */
+            width: 100%; /* 相对于父元素宽度自适应 */
+            height: auto; /* 自适应高度 */
+            position: absolute; /* 相对于父元素定位 */
+            top: 50%;
+            left: 51%;
+            border-radius: 12px ; /* 圆角半径为10px */
+            border: 4px solid black; /* 描边为2px黑色实线 */
+            filter: drop-shadow(0px 57px 23px rgba(119, 238, 236, 0.03)) drop-shadow(0px 32px 19px rgba(119, 238, 236, 0.1)) drop-shadow(0px 14px 14px rgba(119, 238, 236, 0.17)) drop-shadow(0px 4px 8px rgba(119, 238, 236, 0.2));
+        }  
+
+        .image_4 {
+            max-width: 46%; /* 设置最大宽度为100% */
+            width: 100%; /* 相对于父元素宽度自适应 */
+            height: auto; /* 自适应高度 */
+            position: absolute; /* 相对于父元素定位 */
+            top: 35%;
+            left: 2%;
+            border-radius: 12px ; /* 圆角半径为10px */
+            border: 4px solid black; /* 描边为2px黑色实线 */
+            filter: drop-shadow(0px 57px 23px rgba(119, 238, 236, 0.03)) drop-shadow(0px 32px 19px rgba(119, 238, 236, 0.1)) drop-shadow(0px 14px 14px rgba(119, 238, 236, 0.17)) drop-shadow(0px 4px 8px rgba(119, 238, 236, 0.2));
+        }  
+
+        .image_5 {
+            max-width: 93%; /* 设置最大宽度为100% */
+            width: 100%; /* 相对于父元素宽度自适应 */
+            height: auto; /* 自适应高度 */
+            position: absolute; /* 相对于父元素定位 */
+            top: 17%;
+            left: 3%;
+            border-radius: 12px ; /* 圆角半径为10px */
+            border: 6px solid black; /* 描边为2px黑色实线 */
+            filter: drop-shadow(0px 174px 49px rgba(119, 155, 238, 0.01)) drop-shadow(0px 111px 45px rgba(119, 155, 238, 0.06)) drop-shadow(0px 63px 38px rgba(119, 155, 238, 0.1)) drop-shadow(0px 28px 28px rgba(119, 155, 238, 0.2)) drop-shadow(0px 7px 15px rgba(119, 155, 238, 0.25));
+        } 
+
+        @media only screen and (max-width: 1280px) {
+            .container {
+                width: 100%;
+                /* 在小于1280px时宽度为100% */
+            }  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/RTgR1r3z.png" alt="Image 1" loading="lazy"> 
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/hZOx4fPl.png" alt="Image 2" loading="lazy"> 
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/cKaOhNda.png" alt="Image 3" loading="lazy"> 
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/kapJvFyh.png" alt="Image 4" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/8t8qvk3h.png" alt="Image 5" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/MPwTaTlE.png" alt="Image 6" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/uqWQOLK3.png" alt="Image 7" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/CDp4Aben.png" alt="Image 8" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/TixVxU2z.png" alt="Image 9" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/iwDLxfLT.png" alt="Image 10" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/SyDWNrvZ.png" alt="Image 11" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/fY5OzsLS.png" alt="Image 12" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/22E33bUA.png" alt="Image 13" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/FdJGj504.png" alt="Image 14" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/JMfRKHhe.png" alt="Image 15" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/EpUzStT4.png" alt="Image 16" loading="lazy">
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/12/ol1KFjnq.png" alt="Image 17" loading="lazy">
+        <div class="dongtu">
+            <img src="https://fgimg.top/i/SDdJVMt9EI.png" alt="18bj.png" title="18bj.png" loading="lazy"/>
+            <img class="image_1" src="https://fgimg.top/i/9kBC02gQYZ.webp" alt="18.webp" title="18.webp" />          
+          </div>
+        <div class="dongtu">
+            <img src="https://img2.imgtp.com/2024/03/14/tTDs8Jlr.png" alt="19bj.png" title="19bj.png" loading="lazy"/>
+            <img class="image_1" src="https://fgimg.top/i/k8zwWNdjP7.webp" alt="19.webp" title="19.webp" />          
+        </div>
+        <div class="dongtu">
+            <img src="https://fgimg.top/i/YzIPYIQLuc.png" alt="20bj.png" title="20bj.png" loading="lazy"/>
+            <img class="image_1" src="https://fgimg.top/i/1teaIFpKmC.webp" alt="20.webp" title="20.webp" />          
+        </div>
+        <div class="dongtu">
+            <img src="https://img2.imgtp.com/2024/03/15/mdtCZBF9.png" alt="21bj.png" title="21bj.png" loading="lazy"/>
+            <img class="image_2" src="https://fgimg.top/i/1aCkOADAEZ.webp" alt="21-1.webp" title="21-1.webp" />          
+            <img class="image_3" src="https://fgimg.top/i/KBdunPSeEo.webp" alt="21-2.webp" title="21-2.webp" />          
+            <img class="image_4" src="https://fgimg.top/i/13Rru8slXM.webp" alt="21-3.webp" title="21-3.webp" />          
+        </div>
+        <div class="dongtu">
+            <img src="https://img2.imgtp.com/2024/03/15/LSA89R0b.png" alt="22bj.png" title="22bj.png" loading="lazy"/>
+            <img class="image_5" src="https://fgimg.top/i/3z58bVS5q0.webp" alt="场所风险预警0.1.webp" title="场所风险预警0.1.webp" />         
+        </div>
+        <div class="dongtu">
+            <img src="https://img2.imgtp.com/2024/03/15/Xaz7ceaT.png" alt="23bj.png" title="23bj.png" loading="lazy"/>
+            <img class="image_1" src="https://fgimg.top/i/nY9Fsv1rVw.webp" alt="20.webp" title="20.webp" />     
+        </div>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/9y6VRJSp.png" alt="24.png" title="24.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/s0PxnYwN.png" alt="25.png" title="25.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/7EJk0X55.png" alt="26.png" title="26.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/V2R3Ps1r.png" alt="27.png" title="27.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/iJB3XDxp.png" alt="28.png" title="28.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/n9ehgO0J.png" alt="29.png" title="29.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/wtPA3n6B.png" alt="30.png" title="30.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/hLk75XCQ.png" alt="31.png" title="31.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/W9yVYZRz.png" alt="32.png" title="32.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/Rg0H3BRn.png" alt="33.png" title="33.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/0mJk2R2V.png" alt="34.png" title="34.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/3EllmU5h.png" alt="35.png" title="35.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/2ewPOm9u.png" alt="36.png" title="36.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/NBzxB8P7.png" alt="37.png" title="37.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/XbepsSxE.png" alt="38.png" title="38.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/eJnoGWzo.png" alt="39.png" title="39.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/plx1NTqz.png" alt="40.png" title="40.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/BLzTlWvP.png" alt="41.png" title="41.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/2IovZBIP.png" alt="42.png" title="42.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/MgqUsbjN.png" alt="43.png" title="43.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/h49BenZK.png" alt="44.png" title="44.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/1mdXzF8w.png" alt="45.png" title="45.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/OtMb31zO.png" alt="46.png" title="46.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/1RBze7TA.png" alt="47.png" title="47.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/hunHxWGt.png" alt="48.png" title="48.png" loading="lazy"/>
+        <img class="image_0" src="https://img2.imgtp.com/2024/03/14/0ZRLLbWz.png" alt="49.png" title="49.png" loading="lazy"/>
+        <img class="image_0"src="https://img2.imgtp.com/2024/03/14/XzOLTc0J.png" alt="50.png" title="50.png" loading="lazy"/>
+
+    </div>
+</body >
+
+</html>
